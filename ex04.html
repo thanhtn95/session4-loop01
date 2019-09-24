@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let check =0;
+    let a=[1,1];
+    let pos =2;
+    while(check == 0){
+        let next = a[pos-1]+a[pos-2];
+        if(next % 5 == 0){
+            document.write("So dau tien trong day fibonacci chia het cho 5 la :"+next);
+            check = 1;
+        }else{
+            a.push(next);
+            pos++;
+        }
+    }
+</script>
+</body>
+</html>
